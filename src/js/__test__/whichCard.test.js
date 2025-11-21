@@ -12,6 +12,7 @@ test.each([
   ['null for invalid user card', '1222222222222', null],
 
 ])(('it should be %s'), (_, value, expected) => {
-  expected(whichCard(value)).toBe(expected);
+  expect(whichCard(value)).toBe(expected);
 
 });
+
